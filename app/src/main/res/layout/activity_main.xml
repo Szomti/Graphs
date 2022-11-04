@@ -50,7 +50,7 @@
         android:id="@+id/firstText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Position I"
+        android:text="Node I"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/decreaseFirst"
@@ -103,7 +103,7 @@
         android:id="@+id/secondText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Position J"
+        android:text="Node J"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/decreaseSecond"
@@ -124,7 +124,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.225" />
+        app:layout_constraintVertical_bias="0.2" />
 
     <Button
         android:id="@+id/setBtn"
@@ -137,5 +137,186 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintVertical_bias="0.27" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:backgroundTint="#0000FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.578" />
+
+    <Button
+        android:id="@+id/increaseFirstNode"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="20sp"
+        android:backgroundTint="#00FF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <Button
+        android:id="@+id/decreaseFirstNode"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="20sp"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <TextView
+        android:id="@+id/currentFirstNode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/decreaseFirstNode"
+        app:layout_constraintEnd_toStartOf="@+id/increaseFirstNode"
+        app:layout_constraintStart_toEndOf="@+id/decreaseFirstNode"
+        app:layout_constraintTop_toTopOf="@+id/decreaseFirstNode" />
+
+    <TextView
+        android:id="@+id/firstNodeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Node I"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/decreaseFirstNode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/decreaseFirstNode"
+        app:layout_constraintTop_toTopOf="@+id/decreaseFirstNode" />
+
+    <Button
+        android:id="@+id/increaseSecondNode"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="20sp"
+        android:backgroundTint="#00FF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/decreaseSecondNode"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="20sp"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/currentSecondNode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/decreaseSecondNode"
+        app:layout_constraintEnd_toStartOf="@+id/increaseSecondNode"
+        app:layout_constraintStart_toEndOf="@+id/decreaseSecondNode"
+        app:layout_constraintTop_toTopOf="@+id/decreaseSecondNode" />
+
+    <TextView
+        android:id="@+id/secondNodeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Node J"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/decreaseSecondNode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/decreaseSecondNode"
+        app:layout_constraintTop_toTopOf="@+id/decreaseSecondNode" />
+
+    <TextView
+        android:id="@+id/pathText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Path"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/resultPathText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result Path"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655" />
+
+    <TextView
+        android:id="@+id/resultPathInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
 </androidx.constraintlayout.widget.ConstraintLayout>

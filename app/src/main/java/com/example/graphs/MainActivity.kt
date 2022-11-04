@@ -2,9 +2,7 @@ package com.example.graphs
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
 import com.example.graphs.databinding.ActivityMainBinding
-import kotlin.reflect.typeOf
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
