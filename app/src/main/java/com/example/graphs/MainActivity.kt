@@ -1,5 +1,6 @@
 package com.example.graphs
 
+import android.opengl.Matrix
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.graphs.databinding.ActivityMainBinding
@@ -21,12 +22,17 @@ class MainActivity : AppCompatActivity() {
             binding.graphContains.setText(myArray[firstNum][secondNum].toString())
         }
 
+        fun pathWeightChangeable() {
+            binding.graphContains.isEnabled = firstNum != secondNum
+        }
+
         graphContainedText()
 
         binding.increaseFirst.setOnClickListener {
             if(firstNum < listSize){
                 firstNum += 1
                 graphContainedText()
+                pathWeightChangeable()
             }
         }
 
@@ -34,6 +40,7 @@ class MainActivity : AppCompatActivity() {
             if(firstNum > 0){
                 firstNum -= 1
                 graphContainedText()
+                pathWeightChangeable()
             }
         }
 
@@ -41,6 +48,7 @@ class MainActivity : AppCompatActivity() {
             if(secondNum < listSize){
                 secondNum += 1
                 graphContainedText()
+                pathWeightChangeable()
             }
         }
 
@@ -48,6 +56,7 @@ class MainActivity : AppCompatActivity() {
             if(secondNum > 0){
                 secondNum -= 1
                 graphContainedText()
+                pathWeightChangeable()
             }
         }
 
@@ -55,6 +64,10 @@ class MainActivity : AppCompatActivity() {
             myArray[firstNum][secondNum] = binding.graphContains.text.toString().toInt()
             println(myArray[firstNum][secondNum])
             println(myArray[firstNum+1][secondNum+1])
+        }
+
+        binding.searchBtn.setOnClickListener {
+
         }
     }
 }
