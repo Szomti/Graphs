@@ -119,6 +119,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Empty"
+        android:width="60dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -282,7 +284,7 @@
         android:id="@+id/pathText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Search Path"
+        android:text="Check Distance"
         android:textSize="22sp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -293,10 +295,10 @@
         app:layout_constraintVertical_bias="0.35" />
 
     <TextView
-        android:id="@+id/resultPathText"
+        android:id="@+id/distanceInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result Path"
+        android:text="Distance"
         android:textSize="22sp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -305,18 +307,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.655" />
-
-    <TextView
-        android:id="@+id/resultPathInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
 </androidx.constraintlayout.widget.ConstraintLayout>
