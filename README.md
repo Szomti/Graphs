@@ -1,4 +1,4 @@
 ## About
 
 Basic app for testing Dijkstra's algorithm.
-You can add more nodes and set "distance" between them etc.
+Creates nodes and you can set "distance" between them etc.
